@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0.9375rem;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (min-width: 769px) {
+  .main {
+    padding: 2rem 6.25rem;
+  }
+
+  .main__container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+  }
+}

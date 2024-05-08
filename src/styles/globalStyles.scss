@@ -1,0 +1,24 @@
+:root {
+  --brand100: #fd377e;
+  --brand200: #e34981;
+  --color-secondary: #03b898;
+  --color-grey100: #f8f9fa;
+  --color-grey200: #e9ecef;
+  --color-grey300: #868e96;
+  --color-grey400: #212529;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #ff0;
+}
+
+body {
+  color: var(--color-grey400);
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}

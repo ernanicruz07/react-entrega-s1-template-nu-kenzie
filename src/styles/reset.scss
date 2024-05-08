@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button,
+select {
+  cursor: pointer;
+}

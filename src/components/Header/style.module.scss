@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0.9375rem;
+  box-shadow: 0 4px 20px var(--color-grey200);
+}
+
+.header > div {
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .header {
+    padding: 1.5rem 6.25rem;
+  }
+}

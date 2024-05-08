@@ -1,0 +1,43 @@
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  @extend %flexColumn;
+
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  border: 2px solid var(--color-grey200);
+}
+
+.form > div {
+  @extend %flexColumn;
+
+  gap: 0.75rem;
+}
+
+.form__input {
+  @extend %flexColumn;
+
+  gap: 0.25rem;
+}
+
+.form__input > p {
+  color: var(--color-grey300);
+}
+
+@media (min-width: 769px) {
+  .form {
+    gap: 2rem;
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .form > div {
+    gap: 1.5rem;
+  }
+
+  .form__input {
+    gap: 0.75rem;
+  }
+}
