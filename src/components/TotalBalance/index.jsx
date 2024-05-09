@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 
-export const TotalBalance = ({ balanceList }) => {
+export const TotalBalance = ({ balanceList, children }) => {
   const totalSum = balanceList.reduce((sum, item) => {
     return item.type === "Entrada" ? sum + item.value : sum - item.value;
   }, 0);
@@ -16,7 +16,7 @@ export const TotalBalance = ({ balanceList }) => {
           })}
         </h2>
       </div>
-      <p className="text2">O valor se refere ao saldo</p>
+      {children}
     </div>
   );
 };
